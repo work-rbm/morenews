@@ -1,33 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Novidades - MoreNews</title>
   <style>
     body {
-      font-family: sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f7f7f7;
-      padding: 2rem;
       color: #333;
+      padding: 2rem;
+      text-align: center;
     }
+
     h1 {
       color: #2c3e50;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
     }
-    a {
-      display: inline-block;
-      margin-top: 1rem;
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .whatsapp-button {
+      display: inline-flex;
+      align-items: center;
+      background-color: #25D366;
+      color: white;
+      text-decoration: none;
+      padding: 0.75rem 1.2rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1ebe5b;
+    }
+
+    .whatsapp-button img {
+      width: 24px;
+      height: 24px;
+      margin-right: 0.5rem;
+    }
+
+    a.back-link {
+      display: block;
+      margin-top: 2rem;
       color: #2980b9;
       text-decoration: none;
     }
-    a:hover {
+
+    a.back-link:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
+
   <h1>Novidades</h1>
   <p>Estamos preparando conteúdos incríveis para você. Fique ligado!</p>
-  <a href="index.html">← Voltar ao início</a>
+
+  <!-- Botão WhatsApp -->
+  <a class="whatsapp-button" href="https://wa.me/5519997592085" target="_blank" rel="noopener">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+    Fale conosco no WhatsApp
+  </a>
+
+  <a href="index.html" class="back-link">← Voltar ao início</a>
+
 </body>
 </html>
