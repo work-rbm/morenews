@@ -3,69 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MoreNews</title>
+  <title>MoreNews - Início</title>
   <style>
-    /* Reset */
-    * {
+    body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    /* Fundo com imagem */
-    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      text-align: center;
       height: 100vh;
-      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-        url('https://images.unsplash.com/photo-1522199755839-a2bacb67c546?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
-      background-size: cover;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    .container {
-      text-align: center;
-      color: white;
-      animation: fadeIn 2s ease-in;
     }
 
     h1 {
-      font-size: 4rem;
-      font-weight: bold;
+      font-size: 3.5rem;
       margin-bottom: 1rem;
     }
 
     p {
-      font-size: 1.5rem;
-      color: #e0e0e0;
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
     }
 
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    .links a {
+      display: inline-block;
+      margin: 0 1rem;
+      padding: 0.8rem 1.5rem;
+      background-color: #ffffff22;
+      border: 1px solid #ffffff44;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: background 0.3s;
     }
 
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2.5rem;
-      }
-      p {
-        font-size: 1.2rem;
-      }
+    .links a:hover {
+      background-color: #ffffff55;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>MoreNews</h1>
-    <p>Em breve novidades</p>
+  <h1>MoreNews</h1>
+  <p>Em breve novidades</p>
+  <div class="links">
+    <a href="novidades.html">Novidades</a>
+    <a href="sobre.html">Sobre</a>
   </div>
 </body>
 </html>
