@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MoreNews</title>
+  <title>MoreNews - Comunicação Inteligente</title>
   <style>
-    /* Reset básico */
+    /* Reset e estilos base */
     * {
       margin: 0;
       padding: 0;
@@ -15,20 +15,19 @@
     body, html {
       height: 100%;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    /* Fundo com imagem */
-    body {
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url('https://images.unsplash.com/photo-1522199755839-a2bacb67c546?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
-      background-size: cover;
       color: white;
     }
 
-    /* Menu superior */
+    /* Imagem de fundo */
+    body {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+        url('https://images.unsplash.com/photo-1581092919535-0c3c9e6cc55d?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* Cabeçalho com menu */
     header {
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 0, 0, 0.8);
       padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
@@ -36,6 +35,7 @@
       position: fixed;
       top: 0;
       left: 0;
+      width: 100%;
       z-index: 1000;
     }
 
@@ -43,13 +43,12 @@
       font-size: 1.8rem;
       font-weight: bold;
       color: #fff;
-      text-transform: uppercase;
     }
 
     nav a {
       color: #fff;
-      margin-left: 1.5rem;
       text-decoration: none;
+      margin-left: 2rem;
       font-size: 1rem;
       transition: color 0.3s;
     }
@@ -62,7 +61,6 @@
     .main-content {
       height: 100vh;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
@@ -70,45 +68,87 @@
     }
 
     .main-content h1 {
-      font-size: 4rem;
+      font-size: 3.5rem;
       margin-bottom: 1rem;
     }
 
     .main-content p {
       font-size: 1.5rem;
       color: #e0e0e0;
+      max-width: 600px;
+      margin: 0 auto;
     }
 
-    @media (max-width: 600px) {
+    /* Rodapé com redes sociais */
+    footer {
+      background-color: rgba(0, 0, 0, 0.9);
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .social-icons a {
+      margin: 0 1rem;
+      color: white;
+      font-size: 1.5rem;
+      display: inline-block;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #ffcc00;
+    }
+
+    @media (max-width: 768px) {
+      nav a {
+        margin-left: 1rem;
+        font-size: 0.95rem;
+      }
+
       .main-content h1 {
         font-size: 2.5rem;
       }
+
       .main-content p {
         font-size: 1.2rem;
-      }
-      nav a {
-        margin-left: 1rem;
-        font-size: 0.9rem;
+        padding: 0 1rem;
       }
     }
   </style>
+
+  <!-- Ícones de redes sociais via CDN -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <!-- Menu superior -->
+  <!-- Cabeçalho -->
   <header>
     <div class="logo">MoreNews</div>
     <nav>
+      <a href="#solucoes">Soluções</a>
+      <a href="#cases">Cases</a>
       <a href="novidades.html">Novidades</a>
-      <a href="sobre.html">Sobre</a>
+      <a href="#sobre">Sobre</a>
     </nav>
   </header>
 
   <!-- Conteúdo principal -->
   <div class="main-content">
-    <h1>MoreNews</h1>
-    <p>Em breve novidades</p>
+    <div>
+      <h1>Comunicação que conecta</h1>
+      <p>A MoreNews é uma empresa de notícias e soluções digitais, conectando você ao que importa de forma moderna e eficaz.</p>
+    </div>
   </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="social-icons">
+      <a href="https://wa.me/5519997592085" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+    </div>
+    <p style="margin-top: 1rem; font-size: 0.9rem; color: #ccc;">© 2025 MoreNews. Todos os direitos reservados.</p>
+  </footer>
 
 </body>
 </html>
