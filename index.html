@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MoreNews - Comunicação Inteligente</title>
   <style>
-    /* Reset e estilos base */
     * {
       margin: 0;
       padding: 0;
@@ -16,16 +15,11 @@
       height: 100%;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: white;
-    }
-
-    /* Imagem de fundo */
-    body {
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
         url('https://images.unsplash.com/photo-1581092919535-0c3c9e6cc55d?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
       background-size: cover;
     }
 
-    /* Cabeçalho com menu */
     header {
       background-color: rgba(0, 0, 0, 0.8);
       padding: 1rem 2rem;
@@ -57,29 +51,36 @@
       color: #ffcc00;
     }
 
-    /* Conteúdo principal */
     .main-content {
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding-top: 5rem;
+      padding-top: 6rem;
+      padding-bottom: 4rem;
     }
 
     .main-content h1 {
-      font-size: 3.5rem;
+      font-size: 3rem;
       margin-bottom: 1rem;
     }
 
     .main-content p {
-      font-size: 1.5rem;
-      color: #e0e0e0;
+      font-size: 1.3rem;
       max-width: 600px;
-      margin: 0 auto;
+      margin-bottom: 2rem;
+      color: #e0e0e0;
     }
 
-    /* Rodapé com redes sociais */
+    .main-content img {
+      width: 80%;
+      max-width: 600px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    }
+
     footer {
       background-color: rgba(0, 0, 0, 0.9);
       padding: 1.5rem;
@@ -105,17 +106,21 @@
       }
 
       .main-content h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
       }
 
       .main-content p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         padding: 0 1rem;
+      }
+
+      .main-content img {
+        width: 90%;
       }
     }
   </style>
 
-  <!-- Ícones de redes sociais via CDN -->
+  <!-- Font Awesome para redes sociais -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -133,10 +138,11 @@
 
   <!-- Conteúdo principal -->
   <div class="main-content">
-    <div>
-      <h1>Comunicação que conecta</h1>
-      <p>A MoreNews é uma empresa de notícias e soluções digitais, conectando você ao que importa de forma moderna e eficaz.</p>
-    </div>
+    <h1>Comunicação que conecta</h1>
+    <p>A MoreNews é uma empresa de notícias e soluções digitais, conectando você ao que importa com agilidade, criatividade e tecnologia.</p>
+    
+    <!-- Imagem principal de comunicação -->
+    <img src="https://images.unsplash.com/photo-1603386329225-868f9dc9c0ae?auto=format&fit=crop&w=1200&q=80" alt="Comunicação Digital">
   </div>
 
   <!-- Rodapé -->
