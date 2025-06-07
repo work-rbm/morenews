@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MoreNews - Comunicação Inteligente</title>
+  <title>MoreNews - Comunicação e Tecnologia</title>
   <style>
     * {
       margin: 0;
@@ -11,19 +11,25 @@
       box-sizing: border-box;
     }
 
-    body, html {
+    html, body {
       height: 100%;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #111;
-      color: white;
+    }
+
+    body {
+      background: url('https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background-size: cover;
     }
 
     header {
-      background-color: #000;
+      background-color: rgba(0, 0, 0, 0.85);
       padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
     }
 
     .logo {
@@ -46,8 +52,6 @@
       color: #fff;
       text-decoration: none;
       font-size: 1rem;
-      padding: 0.5rem 0;
-      display: inline-block;
     }
 
     nav ul.menu .submenu {
@@ -65,48 +69,14 @@
     nav ul.menu .submenu li a {
       padding: 0.5rem 1rem;
       display: block;
-      white-space: nowrap;
-    }
-
-    nav ul.menu .submenu li a:hover {
-      background-color: #333;
-      color: #ffcc00;
     }
 
     nav ul.menu li.has-submenu:hover .submenu {
       display: block;
     }
 
-    .main-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 5rem 2rem 3rem;
-      min-height: calc(100vh - 160px); /* Header + Footer height */
-    }
-
-    .main-content h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .main-content p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin-bottom: 2rem;
-      color: #ccc;
-    }
-
-    .main-content img {
-      width: 90%;
-      max-width: 600px;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.6);
-    }
-
     footer {
-      background-color: #000;
+      background-color: rgba(0, 0, 0, 0.9);
       color: white;
       padding: 1.5rem 1rem;
       text-align: center;
@@ -119,30 +89,11 @@
       margin: 0 1rem;
       color: white;
       font-size: 1.5rem;
-      display: inline-block;
       transition: color 0.3s;
     }
 
     .social-icons a:hover {
       color: #ffcc00;
-    }
-
-    @media (max-width: 768px) {
-      nav ul.menu {
-        gap: 1rem;
-      }
-
-      .main-content h1 {
-        font-size: 2rem;
-      }
-
-      .main-content p {
-        font-size: 1rem;
-      }
-
-      .main-content img {
-        width: 100%;
-      }
     }
   </style>
 
@@ -159,8 +110,8 @@
         <li class="has-submenu">
           <a href="#">Soluções</a>
           <ul class="submenu">
-            <li><a href="#">Tráfego Pago</a></li>
-            <li><a href="#">Criamos seu site</a></li>
+            <li><a href="trafego.html">Tráfego Pago</a></li>
+            <li><a href="site.html">Criamos seu site</a></li>
           </ul>
         </li>
         <li><a href="#cases">Cases</a></li>
@@ -170,16 +121,9 @@
     </nav>
   </header>
 
-  <!-- Conteúdo Principal -->
-  <main class="main-content">
-    <h1>Comunicação que conecta</h1>
-    <p>A MoreNews é uma empresa de notícias e soluções digitais, conectando você ao que importa com agilidade, criatividade e tecnologia.</p>
-    
-    <!-- Imagem visível -->
-    <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee1b?auto=format&fit=crop&w=1200&q=80" alt="Comunicação Moderna" />
-  </main>
+  <!-- Apenas imagem no body -->
 
-  <!-- Rodapé -->
+  <!-- Rodapé fixo -->
   <footer>
     <div class="social-icons">
       <a href="https://wa.me/5519997592085" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
